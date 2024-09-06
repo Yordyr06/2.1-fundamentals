@@ -4,7 +4,6 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>_2._1_fundamentals</RootNamespace>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>
