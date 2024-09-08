@@ -1,17 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
-namespace Fundametals
+namespace Fundamentals
 {
   class Appointment 
   {
-    string date;
-    string patient;
+    public string date;
+    public string patient;
+    public void Impending() 
+    {
+      Console.Beep(3000, 1000);
+    }
   }
   class Program 
   {
-    static void Main(string[] args) 
+    static void Main(string[] args)
     {
+      var myAppointment = new Appointment();
+      myAppointment.Impending();
       Console.WriteLine("Hello, World!");
     }
   }
