@@ -2,15 +2,16 @@ using System;
 
 namespace Fundamentals.Repositories 
 {
-  class Appointment 
+  interface IAppointment 
   {
-    public string Date { get; set; }
-    public string Patient { get; set; }
+    public int Id { get; set; }
+    public IPatient Patient { get; set; }
+    public IDate Date { get; set; }
+    public Workday Workday { get; set; }
+    public Schedule Schedule { get; set; }
     public void Impending() 
     {
       // TO DO: Implement Impending method
-    }
-
-    
+    }    
   }
 }
